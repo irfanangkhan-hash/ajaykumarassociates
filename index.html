@@ -1,1 +1,4449 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="CA Ajay Kumar - Professional Chartered Accountant providing Accounting, Taxation, GST, Audit, Compliance and Financial Advisory services.">
+
+    <meta name="keywords"
+          content="CA Ajay Kumar, Chartered Accountant, CA Services, GST, Income Tax, Audit, Accounting, Tax Consultant">
+
+    <meta name="author"
+          content="CA Ajay Kumar">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <title>CA Ajay Kumar | Chartered Accountant</title>
+
+    <link rel="icon"
+          type="image/png"
+          href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet"
+          href="css/style.css">
+  /* =====================================================
+   GLOBAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #14213d;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root {
+
+    --navy: #071d3a;
+    --navy-light: #0c2b52;
+
+    --gold: #d9a52e;
+    --gold-light: #f1c75b;
+
+    --white: #ffffff;
+    --light: #f5f7fa;
+    --text: #14213d;
+    --muted: #687386;
+
+    --border: #e3e7ed;
+
+    --shadow:
+        0 15px 45px rgba(7, 29, 58, 0.10);
+
+    --transition:
+        all 0.3s ease;
+}
+
+
+/* =====================================================
+   TOP BAR
+===================================================== */
+
+.top-bar {
+    background: var(--navy);
+    color: white;
+    font-size: 13px;
+}
+
+.top-container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 9px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-contact,
+.top-social {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.top-contact a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    transition: var(--transition);
+}
+
+.top-contact a:hover {
+    color: var(--gold-light);
+}
+
+.top-contact i {
+    color: var(--gold-light);
+}
+
+.top-social {
+    gap: 14px;
+}
+
+.top-social span {
+    margin-right: 4px;
+}
+
+.top-social a {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 50%;
+
+    transition: var(--transition);
+}
+
+.top-social a:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--navy);
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow:
+        0 4px 20px rgba(0,0,0,0.06);
+}
+
+.nav-container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 13px 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* BRAND */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    min-width: 245px;
+}
+
+.brand-logo {
+    width: 54px;
+    height: 54px;
+
+    border: 2px solid var(--gold);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--navy);
+
+    font-size: 22px;
+    font-weight: 800;
+
+    position: relative;
+}
+
+.brand-logo::after {
+    content: "";
+    position: absolute;
+
+    width: 30px;
+    height: 2px;
+
+    background: var(--gold);
+
+    bottom: 7px;
+}
+
+.brand-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name strong {
+    font-size: 18px;
+    color: var(--navy);
+}
+
+.brand-name small {
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+
+/* NAV */
+
+.nav-menu {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.nav-menu a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #172235;
+
+    position: relative;
+
+    padding: 27px 0;
+}
+
+.nav-menu a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 17px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--gold);
+
+    transition: var(--transition);
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+    width: 100%;
+}
+
+.nav-menu a.active {
+    color: var(--navy);
+}
+
+
+/* NAV BUTTON */
+
+.nav-btn {
+    background: var(--navy);
+    color: white;
+
+    padding: 13px 20px;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition: var(--transition);
+}
+
+.nav-btn:hover {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+
+/* MOBILE BUTTON */
+
+.menu-toggle {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    font-size: 24px;
+    color: var(--navy);
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    position: relative;
+
+    min-height: 650px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #061b37 0%,
+            #092a50 48%,
+            #e8edf2 100%
+        );
+
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(217,165,46,0.12),
+            transparent 35%
+        );
+}
+
+.hero-container {
+    max-width: 1250px;
+    min-height: 650px;
+
+    margin: auto;
+    padding: 70px 25px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+    color: white;
+
+    max-width: 650px;
+
+    padding-bottom: 60px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    border: 1px solid rgba(217,165,46,0.6);
+
+    color: var(--gold-light);
+
+    padding: 8px 13px;
+
+    border-radius: 30px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    margin-bottom: 22px;
+}
+
+.hero-content h1 {
+    font-size: clamp(45px, 5vw, 70px);
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    margin-bottom: 22px;
+}
+
+.hero-content h1 span {
+    color: var(--gold-light);
+    display: block;
+}
+
+.hero-content h2 {
+    font-size: 25px;
+    line-height: 1.35;
+
+    max-width: 590px;
+
+    font-weight: 500;
+}
+
+.gold-line {
+    width: 85px;
+    height: 4px;
+
+    background: var(--gold);
+
+    margin: 25px 0;
+}
+
+.hero-content > p {
+    max-width: 570px;
+
+    font-size: 15px;
+
+    color: rgba(255,255,255,0.82);
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+
+    background: var(--gold);
+    color: var(--navy);
+
+    padding: 15px 22px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.primary-btn:hover {
+    background: var(--gold-light);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(217,165,46,0.25);
+}
+
+.outline-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,0.6);
+
+    color: white;
+
+    padding: 14px 21px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: var(--transition);
+}
+
+.outline-btn:hover {
+    background: white;
+    color: var(--navy);
+}
+
+
+/* HERO CONTACT */
+
+.hero-contact {
+    display: flex;
+    gap: 35px;
+
+    margin-top: 35px;
+}
+
+.hero-contact a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero-contact > a > i {
+    color: var(--gold-light);
+    font-size: 20px;
+}
+
+.hero-contact small {
+    display: block;
+    color: rgba(255,255,255,0.6);
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
+.hero-contact strong {
+    display: block;
+    font-size: 13px;
+}
+
+
+/* HERO PERSON */
+
+.hero-person {
+    height: 650px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    position: relative;
+}
+
+.person-glow {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(217,165,46,0.18),
+            transparent 65%
+        );
+}
+
+.person-frame {
+    position: relative;
+    z-index: 2;
+
+    width: 430px;
+    height: 590px;
+
+    overflow: hidden;
+
+    border-radius: 220px 220px 0 0;
+
+    border: 2px solid rgba(255,255,255,0.25);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.35);
+}
+
+.person-frame img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
+}
+
+.name-card {
+    position: absolute;
+
+    z-index: 5;
+
+    right: 0;
+    bottom: 65px;
+
+    background: white;
+
+    padding: 17px 25px;
+
+    min-width: 230px;
+
+    box-shadow: var(--shadow);
+
+    border-left: 4px solid var(--gold);
+}
+
+.name-card span {
+    display: block;
+
+    font-size: 9px;
+    letter-spacing: 1.5px;
+
+    color: #777;
+}
+
+.name-card strong {
+    display: block;
+
+    color: var(--navy);
+
+    font-size: 19px;
+}
+
+.name-card small {
+    color: var(--gold);
+
+    font-weight: 700;
+
+    font-size: 9px;
+}
+
+
+/* =====================================================
+   TRUST
+===================================================== */
+
+.trust-section {
+    position: relative;
+
+    margin-top: -45px;
+
+    z-index: 10;
+}
+
+.trust-container {
+    max-width: 1150px;
+
+    margin: auto;
+
+    background: white;
+
+    box-shadow: var(--shadow);
+
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.trust-card {
+    padding: 25px 22px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    border-right: 1px solid var(--border);
+}
+
+.trust-card:last-child {
+    border-right: none;
+}
+
+.trust-icon {
+    min-width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--navy);
+
+    font-size: 25px;
+}
+
+.trust-card h3 {
+    font-size: 14px;
+    color: var(--navy);
+}
+
+.trust-card p {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.section-heading {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto 50px;
+
+    padding: 0 20px;
+}
+
+.section-heading span,
+.section-label {
+    display: inline-block;
+
+    color: var(--gold);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    color: var(--navy);
+
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+.heading-line {
+    width: 65px;
+    height: 3px;
+
+    background: var(--gold);
+
+    margin: 18px auto;
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.services-section {
+    padding: 110px 25px 90px;
+}
+
+.services-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.service-card {
+    background: white;
+
+    border: 1px solid var(--border);
+
+    padding: 30px;
+
+    border-radius: 7px;
+
+    box-shadow:
+        0 5px 20px rgba(7,29,58,0.04);
+
+    transition: var(--transition);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: var(--gold);
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-icon {
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f7f2e4;
+
+    color: var(--navy);
+
+    border-radius: 7px;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 17px;
+
+    color: var(--navy);
+
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: var(--muted);
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+.service-card a {
+    color: var(--navy);
+
+    font-size: 12px;
+    font-weight: 800;
+
+    display: inline-flex;
+    gap: 8px;
+}
+
+.service-card a:hover {
+    color: var(--gold);
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-section {
+    background: var(--light);
+
+    padding: 100px 25px;
+}
+
+.about-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        0.85fr 1.15fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.about-visual {
+    position: relative;
+}
+
+.about-photo {
+    width: 390px;
+    height: 470px;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    border: 10px solid white;
+
+    box-shadow: var(--shadow);
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
+}
+
+.about-label {
+    position: absolute;
+
+    right: 0;
+    bottom: 25px;
+
+    background: var(--navy);
+
+    color: white;
+
+    padding: 17px 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    border-left: 4px solid var(--gold);
+
+    box-shadow: var(--shadow);
+}
+
+.about-label strong {
+    color: var(--gold-light);
+
+    font-size: 25px;
+}
+
+.about-label span {
+    font-weight: 700;
+
+    font-size: 13px;
+}
+
+.about-content h2 {
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    color: var(--navy);
+
+    margin-bottom: 20px;
+}
+
+.about-content h2 span {
+    color: var(--gold);
+}
+
+.about-content > p {
+    color: var(--muted);
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.about-points {
+    margin: 25px 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 13px;
+}
+
+.about-points div {
+    color: var(--navy);
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.about-points i {
+    color: var(--gold);
+
+    margin-right: 7px;
+}
+
+
+/* =====================================================
+   INDUSTRIES
+===================================================== */
+
+.industries-section {
+    padding: 100px 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--navy),
+            #0d315a
+        );
+}
+
+.section-heading.dark h2 {
+    color: white;
+}
+
+.section-heading.dark p {
+    color: rgba(255,255,255,0.65);
+}
+
+.industries-grid {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 15px;
+}
+
+.industry-card {
+    padding: 28px 10px;
+
+    text-align: center;
+
+    color: white;
+
+    border:
+        1px solid rgba(255,255,255,0.13);
+
+    border-radius: 7px;
+
+    transition: var(--transition);
+}
+
+.industry-card:hover {
+    background: rgba(255,255,255,0.08);
+
+    border-color: var(--gold);
+
+    transform: translateY(-5px);
+}
+
+.industry-card i {
+    color: var(--gold-light);
+
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+
+.industry-card h3 {
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   WHY SECTION
+===================================================== */
+
+.why-section {
+    padding: 100px 25px;
+
+    background: white;
+}
+
+.why-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 0.9fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.why-content h2 {
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    color: var(--navy);
+
+    margin-bottom: 18px;
+}
+
+.why-content > p {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+.why-list {
+    margin-top: 30px;
+}
+
+.why-item {
+    display: flex;
+
+    gap: 18px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.why-number {
+    color: var(--gold);
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+.why-item h3 {
+    font-size: 15px;
+
+    color: var(--navy);
+}
+
+.why-item p {
+    font-size: 12px;
+
+    color: var(--muted);
+}
+
+.stats-box {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+.stat-card {
+    min-height: 190px;
+
+    padding: 25px;
+
+    background: var(--light);
+
+    border: 1px solid var(--border);
+
+    border-radius: 7px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow);
+}
+
+.stat-card i {
+    color: var(--gold);
+
+    font-size: 27px;
+
+    margin-bottom: 12px;
+}
+
+.stat-card strong {
+    color: var(--navy);
+
+    font-size: 30px;
+
+    line-height: 1;
+}
+
+.stat-card span {
+    color: var(--muted);
+
+    font-size: 11px;
+
+    margin-top: 8px;
+}
+
+
+/* =====================================================
+   RESOURCES
+===================================================== */
+
+.resources-section {
+    padding: 100px 25px;
+
+    background: var(--light);
+}
+
+.resources-grid {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.resource-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 7px;
+
+    border: 1px solid var(--border);
+
+    transition: var(--transition);
+}
+
+.resource-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: var(--shadow);
+}
+
+.resource-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f7f2e4;
+
+    color: var(--gold);
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+.resource-card > span {
+    color: var(--gold);
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 1.3px;
+}
+
+.resource-card h3 {
+    color: var(--navy);
+
+    font-size: 18px;
+
+    margin: 8px 0;
+}
+
+.resource-card p {
+    color: var(--muted);
+
+    font-size: 12px;
+
+    margin-bottom: 20px;
+}
+
+.resource-card a {
+    color: var(--navy);
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   CAREER
+===================================================== */
+
+.career-section {
+    padding: 90px 25px;
+
+    background:
+        linear-gradient(
+            110deg,
+            var(--navy),
+            #123e70
+        );
+
+    color: white;
+}
+
+.career-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.career-container span {
+    color: var(--gold-light);
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.career-container h2 {
+    font-size: 38px;
+
+    margin: 12px 0;
+}
+
+.career-container p {
+    max-width: 650px;
+
+    margin: 0 auto 25px;
+
+    color: rgba(255,255,255,0.72);
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   APPOINTMENT
+===================================================== */
+
+.appointment-section {
+    padding: 100px 25px;
+
+    background: var(--light);
+}
+
+.appointment-container {
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        0.9fr 1.1fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+.appointment-info h2 {
+    color: var(--navy);
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.appointment-info > p {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+.appointment-contact {
+    margin-top: 30px;
+}
+
+.appointment-contact a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--navy);
+
+    color: var(--gold-light);
+}
+
+.appointment-contact small {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: 9px;
+}
+
+.appointment-contact strong {
+    color: var(--navy);
+
+    font-size: 14px;
+}
+
+
+/* FORM */
+
+.appointment-form {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 8px;
+
+    box-shadow: var(--shadow);
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 15px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    color: var(--navy);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 5px;
+
+    outline: none;
+
+    color: var(--text);
+
+    font-size: 12px;
+
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--gold);
+
+    box-shadow:
+        0 0 0 3px rgba(217,165,46,0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-btn {
+    width: 100%;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact-section {
+    padding: 100px 25px;
+}
+
+.contact-grid {
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.contact-card {
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border: 1px solid var(--border);
+
+    border-radius: 7px;
+
+    transition: var(--transition);
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow);
+}
+
+.big-contact-icon {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f7f2e4;
+
+    color: var(--gold);
+
+    font-size: 23px;
+}
+
+.contact-card h3 {
+    color: var(--navy);
+
+    font-size: 16px;
+
+    margin-bottom: 7px;
+}
+
+.contact-card p {
+    color: var(--muted);
+
+    font-size: 12px;
+
+    min-height: 38px;
+}
+
+.contact-card a {
+    display: inline-block;
+
+    margin-top: 13px;
+
+    color: var(--navy);
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    background: #04172e;
+
+    color: white;
+}
+
+.footer-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 70px 25px 50px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 0.8fr 1fr 1fr;
+
+    gap: 50px;
+}
+
+.footer-brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 50px;
+    height: 50px;
+
+    border: 2px solid var(--gold);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--gold-light);
+
+    font-weight: 800;
+}
+
+.footer-brand strong {
+    display: block;
+
+    font-size: 17px;
+}
+
+.footer-brand span {
+    display: block;
+
+    font-size: 8px;
+
+    color: rgba(255,255,255,0.55);
+
+    letter-spacing: 1px;
+}
+
+.footer-about p {
+    color: rgba(255,255,255,0.58);
+
+    font-size: 12px;
+
+    max-width: 330px;
+}
+
+.footer-social {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.footer-social a {
+    width: 32px;
+    height: 32px;
+
+    border: 1px solid rgba(255,255,255,0.18);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    transition: var(--transition);
+}
+
+.footer-social a:hover {
+    background: var(--gold);
+
+    color: var(--navy);
+
+    border-color: var(--gold);
+}
+
+.footer-column h3 {
+    color: white;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.footer-column a {
+    display: block;
+
+    color: rgba(255,255,255,0.58);
+
+    font-size: 11px;
+
+    margin-bottom: 12px;
+
+    transition: var(--transition);
+}
+
+.footer-column a:hover {
+    color: var(--gold-light);
+
+    transform: translateX(4px);
+}
+
+.footer-contact a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+.footer-contact i {
+    color: var(--gold);
+}
+
+.footer-bottom {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 20px 25px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.1);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    color: rgba(255,255,255,0.5);
+
+    font-size: 10px;
+}
+
+.footer-bottom div {
+    display: flex;
+
+    gap: 20px;
+}
+
+.footer-bottom a:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   WHATSAPP
+===================================================== */
+
+.whatsapp-float {
+    position: fixed;
+
+    right: 22px;
+    bottom: 22px;
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: #25d366;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 29px;
+
+    z-index: 999;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.2);
+
+    animation: whatsappPulse 2s infinite;
+}
+
+@keyframes whatsappPulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(37,211,102,0.5);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 14px rgba(37,211,102,0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(37,211,102,0);
+    }
+
+}
+
+
+/* =====================================================
+   BACK TO TOP
+===================================================== */
+
+.back-to-top {
+    position: fixed;
+
+    right: 25px;
+    bottom: 92px;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: var(--navy);
+
+    color: white;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: var(--transition);
+
+    z-index: 998;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background: var(--gold);
+
+    color: var(--navy);
+}
+
+
+/* =====================================================
+   RESPONSIVE TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .nav-menu {
+        gap: 14px;
+    }
+
+    .nav-menu a {
+        font-size: 10px;
+    }
+
+    .services-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .industries-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE MOBILE
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .top-container {
+        justify-content: center;
+    }
+
+    .top-social {
+        display: none;
+    }
+
+    .top-contact {
+        gap: 12px;
+
+        font-size: 11px;
+    }
+
+
+    /* NAV */
+
+    .nav-container {
+        padding: 10px 18px;
+
+        justify-content: space-between;
+    }
+
+    .brand {
+        min-width: auto;
+    }
+
+    .brand-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .brand-name strong {
+        font-size: 15px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        display: none;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        box-shadow:
+            0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu a {
+        width: 100%;
+
+        padding: 15px 25px;
+
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-menu a::after {
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-container {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        padding-top: 60px;
+    }
+
+    .hero-content {
+        padding-bottom: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .hero-contact {
+        flex-direction: column;
+
+        gap: 14px;
+    }
+
+    .hero-person {
+        height: 470px;
+    }
+
+    .person-frame {
+        width: 330px;
+        height: 450px;
+    }
+
+    .name-card {
+        right: 5%;
+
+        bottom: 35px;
+    }
+
+
+    /* TRUST */
+
+    .trust-section {
+        margin-top: 0;
+
+        padding: 20px;
+    }
+
+    .trust-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .trust-card {
+        border-bottom: 1px solid var(--border);
+    }
+
+
+    /* ABOUT */
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .about-photo {
+        width: 330px;
+        height: 400px;
+    }
+
+
+    /* WHY */
+
+    .why-container {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    /* APPOINTMENT */
+
+    .appointment-container {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 35px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 550px) {
+
+    .top-contact {
+        flex-direction: column;
+
+        gap: 3px;
+
+        padding: 5px 0;
+    }
+
+
+    .hero-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 39px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .outline-btn {
+        width: 100%;
+    }
+
+    .hero-person {
+        height: 430px;
+    }
+
+    .person-frame {
+        width: 285px;
+        height: 400px;
+    }
+
+    .name-card {
+        right: 0;
+
+        padding: 13px 18px;
+
+        min-width: 190px;
+    }
+
+
+    /* TRUST */
+
+    .trust-container {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-card {
+        border-right: none;
+    }
+
+
+    /* SECTIONS */
+
+    .services-section,
+    .about-section,
+    .industries-section,
+    .why-section,
+    .resources-section,
+    .appointment-section,
+    .contact-section {
+        padding: 75px 18px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+
+    /* SERVICES */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ABOUT */
+
+    .about-photo {
+        width: 280px;
+        height: 350px;
+    }
+
+    .about-content h2,
+    .why-content h2,
+    .appointment-info h2 {
+        font-size: 31px;
+    }
+
+    .about-points {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* INDUSTRIES */
+
+    .industries-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* STATS */
+
+    .stats-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat-card {
+        min-height: 155px;
+
+        padding: 15px;
+    }
+
+
+    /* RESOURCES */
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FORM */
+
+    .appointment-form {
+        padding: 22px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* CONTACT */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .footer-bottom div {
+        flex-direction: column;
+
+        gap: 7px;
+    }
+
+
+    /* WHATSAPP */
+
+    .whatsapp-float {
+        width: 52px;
+        height: 52px;
+
+        right: 15px;
+        bottom: 15px;
+
+        font-size: 26px;
+    }
+
+}
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
+
+<div class="top-bar">
+
+    <div class="top-container">
+
+        <div class="top-contact">
+
+            <a href="tel:+917056015516">
+                <i class="fa-solid fa-phone"></i>
+                +91 70560 15516
+            </a>
+
+            <a href="mailto:caharyana7@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                caharyana7@gmail.com
+            </a>
+
+        </div>
+
+
+        <div class="top-social">
+
+            <span>Follow Us:</span>
+
+            <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <!-- LOGO -->
+
+        <a href="#home" class="brand">
+
+            <div class="brand-logo">
+
+                <span>CA</span>
+
+            </div>
+
+
+            <div class="brand-name">
+
+                <strong>
+                    CA AJAY KUMAR
+                </strong>
+
+                <small>
+                    CHARTERED ACCOUNTANT
+                </small>
+
+            </div>
+
+        </a>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="nav-menu"
+             id="navMenu">
+
+            <a href="#home"
+               class="active">
+                HOME
+            </a>
+
+            <a href="#about">
+                ABOUT US
+            </a>
+
+            <a href="#services">
+                SERVICES
+            </a>
+
+            <a href="#industries">
+                INDUSTRIES
+            </a>
+
+            <a href="#resources">
+                RESOURCES
+            </a>
+
+            <a href="#careers">
+                CAREERS
+            </a>
+
+            <a href="#contact">
+                CONTACT US
+            </a>
+
+        </nav>
+
+
+
+        <!-- APPOINTMENT -->
+
+        <a href="#appointment"
+           class="nav-btn">
+
+            BOOK APPOINTMENT
+
+        </a>
+
+
+
+        <!-- MOBILE BUTTON -->
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open Menu">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO SECTION
+===================================================== -->
+
+<section class="hero"
+         id="home">
+
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-container">
+
+
+        <!-- HERO CONTENT -->
+
+        <div class="hero-content">
+
+
+            <div class="hero-badge">
+
+                <i class="fa-solid fa-certificate"></i>
+
+                PROFESSIONAL CHARTERED ACCOUNTANT
+
+            </div>
+
+
+            <h1>
+
+                Your Growth,
+                <span>Our Expertise.</span>
+
+            </h1>
+
+
+            <h2>
+
+                Trusted CA Services for
+                a Stronger Financial Future.
+
+            </h2>
+
+
+            <div class="gold-line"></div>
+
+
+            <p>
+
+                Professional financial solutions including
+                Accounting, Taxation, GST, Audit, Compliance
+                and Business Advisory services.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+
+                <a href="#services"
+                   class="primary-btn">
+
+                    OUR SERVICES
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+
+                <a href="#appointment"
+                   class="outline-btn">
+
+                    BOOK CONSULTATION
+
+                </a>
+
+            </div>
+
+
+            <!-- CONTACT QUICK LINKS -->
+
+            <div class="hero-contact">
+
+                <a href="tel:+917056015516">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+
+                        <small>Call Us</small>
+
+                        <strong>
+                            +91 70560 15516
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+                <a href="mailto:caharyana7@gmail.com">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+
+                        <small>Email Us</small>
+
+                        <strong>
+                            caharyana7@gmail.com
+                        </strong>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HERO IMAGE -->
+
+        <div class="hero-person">
+
+            <div class="person-glow"></div>
+
+
+            <div class="person-frame">
+
+                <img src="images/owner.jpeg"
+                     alt="CA Ajay Kumar - Chartered Accountant"
+                     loading="eager">
+
+            </div>
+
+
+            <div class="name-card">
+
+                <span>
+                    PROFESSIONAL
+                </span>
+
+                <strong>
+                    CA AJAY KUMAR
+                </strong>
+
+                <small>
+                    CHARTERED ACCOUNTANT
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TRUST SECTION
+===================================================== -->
+
+<section class="trust-section">
+
+    <div class="trust-container">
+
+
+        <div class="trust-card">
+
+            <div class="trust-icon">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Trusted Expertise
+                </h3>
+
+                <p>
+                    Professional CA Services
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="trust-card">
+
+            <div class="trust-icon">
+
+                <i class="fa-solid fa-user-tie"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Client First
+                </h3>
+
+                <p>
+                    Personalized Solutions
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="trust-card">
+
+            <div class="trust-icon">
+
+                <i class="fa-solid fa-clock"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Timely Service
+                </h3>
+
+                <p>
+                    Professional & Efficient
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="trust-card">
+
+            <div class="trust-icon">
+
+                <i class="fa-solid fa-lock"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Confidentiality
+                </h3>
+
+                <p>
+                    Your Data is Secure
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="services-section"
+         id="services">
+
+
+    <div class="section-heading">
+
+        <span>
+            PROFESSIONAL SERVICES
+        </span>
+
+        <h2>
+            Our Services
+        </h2>
+
+        <div class="heading-line"></div>
+
+        <p>
+            Comprehensive accounting and financial services
+            for individuals, professionals and businesses.
+        </p>
+
+    </div>
+
+
+
+    <div class="services-grid">
+
+
+        <!-- SERVICE 1 -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-calculator"></i>
+
+            </div>
+
+            <h3>
+                Accounting & Bookkeeping
+            </h3>
+
+            <p>
+                Professional accounting and bookkeeping
+                solutions to maintain accurate financial records.
+            </p>
+
+            <a href="#appointment">
+                Get Service
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+
+        <!-- SERVICE 2 -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+
+            </div>
+
+            <h3>
+                Income Tax Services
+            </h3>
+
+            <p>
+                Income tax planning, return filing and
+                professional taxation assistance.
+            </p>
+
+            <a href="#appointment">
+                Get Service
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+
+        <!-- SERVICE 3 -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+
+            </div>
+
+            <h3>
+                Audit & Assurance
+            </h3>
+
+            <p>
+                Professional audit and assurance services
+                with a focus on accuracy and transparency.
+            </p>
+
+            <a href="#appointment">
+                Get Service
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+
+        <!-- SERVICE 4 -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-file-circle-check"></i>
+
+            </div>
+
+            <h3>
+                GST & Compliance
+            </h3>
+
+            <p>
+                GST registration, return filing and
+                compliance support for businesses.
+            </p>
+
+            <a href="#appointment">
+                Get Service
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+
+        <!-- SERVICE 5 -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-handshake"></i>
+
+            </div>
+
+            <h3>
+                Business Consulting
+            </h3>
+
+            <p>
+                Practical financial and business advisory
+                solutions to support informed decisions.
+            </p>
+
+            <a href="#appointment">
+                Get Service
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+
+        <!-- SERVICE 6 -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+            </div>
+
+            <h3>
+                Financial Advisory
+            </h3>
+
+            <p>
+                Financial planning and advisory services
+                designed around your financial objectives.
+            </p>
+
+            <a href="#appointment">
+                Get Service
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT SECTION
+===================================================== -->
+
+<section class="about-section"
+         id="about">
+
+
+    <div class="about-container">
+
+
+        <!-- IMAGE -->
+
+        <div class="about-visual">
+
+            <div class="about-photo">
+
+                <img src="images/owner.jpg"
+                     alt="CA Ajay Kumar">
+
+            </div>
+
+
+            <div class="about-label">
+
+                <strong>
+                    CA
+                </strong>
+
+                <span>
+                    AJAY KUMAR
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CONTENT -->
+
+        <div class="about-content">
+
+            <span class="section-label">
+                ABOUT CA AJAY KUMAR
+            </span>
+
+
+            <h2>
+
+                Professional Expertise.
+                <span>Personalized Service.</span>
+
+            </h2>
+
+
+            <p>
+
+                CA Ajay Kumar provides professional accounting,
+                taxation, GST, audit and financial advisory
+                services with a client-focused approach.
+
+            </p>
+
+
+            <p>
+
+                The objective is to provide clear, practical
+                and dependable financial solutions that help
+                clients make informed financial decisions.
+
+            </p>
+
+
+            <div class="about-points">
+
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Professional Financial Guidance
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Transparent & Client-Focused Service
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Confidential Handling of Information
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Practical Business Solutions
+
+                </div>
+
+            </div>
+
+
+            <a href="#appointment"
+               class="primary-btn">
+
+                CONSULT CA AJAY KUMAR
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INDUSTRIES
+===================================================== -->
+
+<section class="industries-section"
+         id="industries">
+
+
+    <div class="section-heading dark">
+
+        <span>
+            INDUSTRIES WE SERVE
+        </span>
+
+        <h2>
+            Financial Support Across Industries
+        </h2>
+
+        <div class="heading-line"></div>
+
+        <p>
+            Professional financial services tailored
+            to different business requirements.
+        </p>
+
+    </div>
+
+
+
+    <div class="industries-grid">
+
+
+        <div class="industry-card">
+
+            <i class="fa-solid fa-store"></i>
+
+            <h3>
+                Retail & Trading
+            </h3>
+
+        </div>
+
+
+        <div class="industry-card">
+
+            <i class="fa-solid fa-industry"></i>
+
+            <h3>
+                Manufacturing
+            </h3>
+
+        </div>
+
+
+        <div class="industry-card">
+
+            <i class="fa-solid fa-laptop-code"></i>
+
+            <h3>
+                IT & Technology
+            </h3>
+
+        </div>
+
+
+        <div class="industry-card">
+
+            <i class="fa-solid fa-truck"></i>
+
+            <h3>
+                Logistics
+            </h3>
+
+        </div>
+
+
+        <div class="industry-card">
+
+            <i class="fa-solid fa-user-doctor"></i>
+
+            <h3>
+                Professionals
+            </h3>
+
+        </div>
+
+
+        <div class="industry-card">
+
+            <i class="fa-solid fa-building"></i>
+
+            <h3>
+                Real Estate
+            </h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHY CHOOSE US
+===================================================== -->
+
+<section class="why-section">
+
+
+    <div class="why-container">
+
+
+        <div class="why-content">
+
+            <span class="section-label">
+                WHY CHOOSE US
+            </span>
+
+
+            <h2>
+                Your Financial Goals.
+                Our Professional Approach.
+            </h2>
+
+
+            <p>
+
+                We focus on providing professional,
+                transparent and practical financial
+                services according to each client's
+                requirements.
+
+            </p>
+
+
+            <div class="why-list">
+
+
+                <div class="why-item">
+
+                    <div class="why-number">
+                        01
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Professional Guidance
+                        </h3>
+
+                        <p>
+                            Clear and practical financial
+                            guidance for better decisions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="why-item">
+
+                    <div class="why-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Client-Focused Service
+                        </h3>
+
+                        <p>
+                            Services designed around
+                            individual client requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="why-item">
+
+                    <div class="why-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Confidentiality
+                        </h3>
+
+                        <p>
+                            Professional handling of
+                            sensitive financial information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- STATS -->
+
+        <div class="stats-box">
+
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-user-tie"></i>
+
+                <strong>
+                    CA
+                </strong>
+
+                <span>
+                    Professional
+                    Chartered Accountant
+                </span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-calculator"></i>
+
+                <strong>
+                    360°
+                </strong>
+
+                <span>
+                    Financial
+                    Solutions
+                </span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <strong>
+                    100%
+                </strong>
+
+                <span>
+                    Professional
+                    Confidentiality
+                </span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <strong>
+                    1:1
+                </strong>
+
+                <span>
+                    Client
+                    Consultation
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     RESOURCES
+===================================================== -->
+
+<section class="resources-section"
+         id="resources">
+
+
+    <div class="section-heading">
+
+        <span>
+            KNOWLEDGE CENTRE
+        </span>
+
+        <h2>
+            Resources & Financial Updates
+        </h2>
+
+        <div class="heading-line"></div>
+
+        <p>
+            Useful information related to taxation,
+            GST and financial planning.
+        </p>
+
+    </div>
+
+
+
+    <div class="resources-grid">
+
+
+        <article class="resource-card">
+
+            <div class="resource-icon">
+
+                <i class="fa-solid fa-file-invoice"></i>
+
+            </div>
+
+            <span>
+                TAXATION
+            </span>
+
+            <h3>
+                Income Tax Updates
+            </h3>
+
+            <p>
+                Important taxation information and
+                useful taxpayer guidance.
+            </p>
+
+            <a href="#appointment">
+                Consult Us →
+            </a>
+
+        </article>
+
+
+
+        <article class="resource-card">
+
+            <div class="resource-icon">
+
+                <i class="fa-solid fa-percent"></i>
+
+            </div>
+
+            <span>
+                GST
+            </span>
+
+            <h3>
+                GST Compliance
+            </h3>
+
+            <p>
+                Understand important GST filing
+                and compliance requirements.
+            </p>
+
+            <a href="#appointment">
+                Consult Us →
+            </a>
+
+        </article>
+
+
+
+        <article class="resource-card">
+
+            <div class="resource-icon">
+
+                <i class="fa-solid fa-chart-pie"></i>
+
+            </div>
+
+            <span>
+                FINANCE
+            </span>
+
+            <h3>
+                Financial Planning
+            </h3>
+
+            <p>
+                Practical financial planning guidance
+                for individuals and businesses.
+            </p>
+
+            <a href="#appointment">
+                Consult Us →
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CAREERS
+===================================================== -->
+
+<section class="career-section"
+         id="careers">
+
+
+    <div class="career-container">
+
+
+        <div>
+
+            <span>
+                CAREER OPPORTUNITIES
+            </span>
+
+
+            <h2>
+                Build Your Professional Career With Us
+            </h2>
+
+
+            <p>
+                Interested in working with a professional
+                accounting and financial services team?
+                Contact us for available opportunities.
+            </p>
+
+
+            <a href="mailto:caharyana7@gmail.com?subject=Career%20Enquiry"
+               class="primary-btn">
+
+                SEND YOUR CV
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     APPOINTMENT
+===================================================== -->
+
+<section class="appointment-section"
+         id="appointment">
+
+
+    <div class="appointment-container">
+
+
+        <div class="appointment-info">
+
+
+            <span class="section-label">
+                BOOK A CONSULTATION
+            </span>
+
+
+            <h2>
+                Let's Discuss
+                Your Financial Requirements.
+            </h2>
+
+
+            <p>
+                Contact CA Ajay Kumar for professional
+                accounting, taxation, GST, audit and
+                financial advisory services.
+            </p>
+
+
+            <div class="appointment-contact">
+
+
+                <a href="tel:+917056015516">
+
+                    <div class="contact-icon">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                    </div>
+
+                    <div>
+
+                        <small>
+                            CALL US
+                        </small>
+
+                        <strong>
+                            +91 70560 15516
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+                <a href="mailto:caharyana7@gmail.com">
+
+                    <div class="contact-icon">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </div>
+
+                    <div>
+
+                        <small>
+                            EMAIL US
+                        </small>
+
+                        <strong>
+                            caharyana7@gmail.com
+                        </strong>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FORM -->
+
+        <form class="appointment-form"
+              id="appointmentForm">
+
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label>
+                        Your Name
+                    </label>
+
+                    <input type="text"
+                           id="name"
+                           placeholder="Enter your name"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Phone Number
+                    </label>
+
+                    <input type="tel"
+                           id="phone"
+                           placeholder="Enter phone number"
+                           required>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label>
+                    Email Address
+                </label>
+
+                <input type="email"
+                       id="email"
+                       placeholder="Enter your email"
+                       required>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label>
+                    Select Service
+                </label>
+
+                <select id="service"
+                        required>
+
+                    <option value="">
+                        Select a service
+                    </option>
+
+                    <option>
+                        Accounting & Bookkeeping
+                    </option>
+
+                    <option>
+                        Income Tax Services
+                    </option>
+
+                    <option>
+                        Audit & Assurance
+                    </option>
+
+                    <option>
+                        GST & Compliance
+                    </option>
+
+                    <option>
+                        Business Consulting
+                    </option>
+
+                    <option>
+                        Financial Advisory
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label>
+                    Your Requirement
+                </label>
+
+                <textarea id="message"
+                          rows="5"
+                          placeholder="Tell us about your requirement..."></textarea>
+
+            </div>
+
+
+
+            <button type="submit"
+                    class="primary-btn form-btn">
+
+                REQUEST APPOINTMENT
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact-section"
+         id="contact">
+
+
+    <div class="section-heading">
+
+        <span>
+            GET IN TOUCH
+        </span>
+
+        <h2>
+            Contact CA Ajay Kumar
+        </h2>
+
+        <div class="heading-line"></div>
+
+        <p>
+            Get in touch for professional accounting
+            and financial services.
+        </p>
+
+    </div>
+
+
+
+    <div class="contact-grid">
+
+
+        <!-- PHONE -->
+
+        <div class="contact-card">
+
+            <div class="big-contact-icon">
+
+                <i class="fa-solid fa-phone"></i>
+
+            </div>
+
+            <h3>
+                Phone
+            </h3>
+
+            <p>
+                +91 70560 15516
+            </p>
+
+            <a href="tel:+917056015516">
+                Call Now →
+            </a>
+
+        </div>
+
+
+
+        <!-- EMAIL -->
+
+        <div class="contact-card">
+
+            <div class="big-contact-icon">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </div>
+
+            <h3>
+                Email
+            </h3>
+
+            <p>
+                caharyana7@gmail.com
+            </p>
+
+            <a href="mailto:caharyana7@gmail.com">
+                Send Email →
+            </a>
+
+        </div>
+
+
+
+        <!-- CONSULTATION -->
+
+        <div class="contact-card">
+
+            <div class="big-contact-icon">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+            </div>
+
+            <h3>
+                Consultation
+            </h3>
+
+            <p>
+                Book a professional
+                consultation.
+            </p>
+
+            <a href="#appointment">
+                Book Now →
+            </a>
+
+        </div>
+
+
+
+        <!-- WHATSAPP -->
+
+        <div class="contact-card">
+
+            <div class="big-contact-icon">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </div>
+
+            <h3>
+                WhatsApp
+            </h3>
+
+            <p>
+                Quick enquiry and
+                consultation.
+            </p>
+
+            <a href="https://wa.me/917056015516?text=Hello%20CA%20Ajay%20Kumar%2C%20I%20would%20like%20to%20discuss%20a%20professional%20service."
+               target="_blank">
+                Chat Now →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+
+    <div class="footer-container">
+
+
+        <!-- ABOUT -->
+
+        <div class="footer-about">
+
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    CA
+                </div>
+
+                <div>
+
+                    <strong>
+                        CA AJAY KUMAR
+                    </strong>
+
+                    <span>
+                        CHARTERED ACCOUNTANT
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p>
+
+                Professional accounting, taxation,
+                GST, audit, compliance and financial
+                advisory services.
+
+            </p>
+
+
+            <div class="footer-social">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                About Us
+            </a>
+
+            <a href="#services">
+                Services
+            </a>
+
+            <a href="#industries">
+                Industries
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+
+
+        <!-- SERVICES -->
+
+        <div class="footer-column">
+
+            <h3>
+                Services
+            </h3>
+
+            <a href="#services">
+                Accounting
+            </a>
+
+            <a href="#services">
+                Income Tax
+            </a>
+
+            <a href="#services">
+                GST
+            </a>
+
+            <a href="#services">
+                Audit
+            </a>
+
+            <a href="#services">
+                Financial Advisory
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column footer-contact">
+
+            <h3>
+                Contact
+            </h3>
+
+
+            <a href="tel:+917056015516">
+
+                <i class="fa-solid fa-phone"></i>
+
+                +91 70560 15516
+
+            </a>
+
+
+            <a href="mailto:caharyana7@gmail.com">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                caharyana7@gmail.com
+
+            </a>
+
+
+            <a href="https://wa.me/917056015516"
+               target="_blank">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+
+        <p>
+
+            © <span id="currentYear"></span>
+            CA Ajay Kumar. All Rights Reserved.
+
+        </p>
+
+
+        <div>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
+
+<a href="https://wa.me/917056015516?text=Hello%20CA%20Ajay%20Kumar%2C%20I%20would%20like%20to%20discuss%20your%20services."
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+<button class="back-to-top"
+        id="backToTop"
+        aria-label="Back to top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/script.js"></script>
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+if (menuToggle && navMenu) {
+
+    menuToggle.addEventListener("click", function () {
+
+        navMenu.classList.toggle("show");
+
+        const icon = menuToggle.querySelector("i");
+
+        if (navMenu.classList.contains("show")) {
+
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+
+        } else {
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+        }
+
+    });
+
+}
+
+
+/* =====================================================
+   CLOSE MOBILE MENU AFTER CLICK
+===================================================== */
+
+const navLinks = document.querySelectorAll(".nav-menu a");
+
+navLinks.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        if (navMenu) {
+            navMenu.classList.remove("show");
+        }
+
+        const icon = menuToggle?.querySelector("i");
+
+        if (icon) {
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+        }
+
+    });
+
+});
+
+
+/* =====================================================
+   ACTIVE NAVIGATION
+===================================================== */
+
+window.addEventListener("scroll", function () {
+
+    const sections = document.querySelectorAll("section[id]");
+
+    let current = "";
+
+    sections.forEach(function (section) {
+
+        const sectionTop = section.offsetTop - 150;
+
+        const sectionHeight = section.offsetHeight;
+
+        if (
+            window.scrollY >= sectionTop &&
+            window.scrollY < sectionTop + sectionHeight
+        ) {
+
+            current = section.getAttribute("id");
+
+        }
+
+    });
+
+
+    navLinks.forEach(function (link) {
+
+        link.classList.remove("active");
+
+        if (
+            link.getAttribute("href") === "#" + current
+        ) {
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+});
+
+
+/* =====================================================
+   BACK TO TOP
+===================================================== */
+
+const backToTop =
+    document.getElementById("backToTop");
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 500) {
+
+        backToTop.classList.add("show");
+
+    } else {
+
+        backToTop.classList.remove("show");
+
+    }
+
+});
+
+
+if (backToTop) {
+
+    backToTop.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+}
+
+
+/* =====================================================
+   APPOINTMENT FORM
+===================================================== */
+
+const appointmentForm =
+    document.getElementById("appointmentForm");
+
+if (appointmentForm) {
+
+    appointmentForm.addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+
+            const name =
+                document.getElementById("name").value.trim();
+
+            const phone =
+                document.getElementById("phone").value.trim();
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const service =
+                document.getElementById("service").value;
+
+            const message =
+                document.getElementById("message").value.trim();
+
+
+            if (!name || !phone || !email || !service) {
+
+                alert(
+                    "Please fill all required fields."
+                );
+
+                return;
+
+            }
+
+
+            /*
+             * WhatsApp message
+             */
+
+            const whatsappMessage =
+                `Hello CA Ajay Kumar,
+
+I would like to book a consultation.
+
+Name: ${name}
+
+Phone: ${phone}
+
+Email: ${email}
+
+Service Required: ${service}
+
+Requirement:
+${message}`;
+
+
+            const whatsappURL =
+                "https://wa.me/917056015516?text=" +
+                encodeURIComponent(whatsappMessage);
+
+
+            window.open(
+                whatsappURL,
+                "_blank"
+            );
+
+
+            appointmentForm.reset();
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   CURRENT YEAR
+===================================================== */
+
+const currentYear =
+    document.getElementById("currentYear");
+
+if (currentYear) {
+
+    currentYear.textContent =
+        new Date().getFullYear();
+
+}
+
+
+/* =====================================================
+   IMAGE ERROR HANDLING
+===================================================== */
+
+const ownerImages =
+    document.querySelectorAll(
+        'img[src="images/owner.jpg"]'
+    );
+
+ownerImages.forEach(function (image) {
+
+    image.addEventListener("error", function () {
+
+        image.style.display = "none";
+
+        image.parentElement.classList.add(
+            "image-missing"
+        );
+
+    });
+
+});
+
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+const revealElements =
+    document.querySelectorAll(
+        ".service-card, .industry-card, .resource-card, .contact-card, .stat-card"
+    );
+
+
+const revealObserver =
+    new IntersectionObserver(
+        function (entries) {
+
+            entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform =
+                        "translateY(0)";
+
+                    revealObserver.unobserve(
+                        entry.target
+                    );
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.12
+        }
+    );
+
+
+revealElements.forEach(function (element) {
+
+    element.style.opacity = "0";
+
+    element.style.transform =
+        "translateY(25px)";
+
+    element.style.transition =
+        "opacity 0.6s ease, transform 0.6s ease";
+
+    revealObserver.observe(element);
+
+});
+
+</body>
+
+</html>
